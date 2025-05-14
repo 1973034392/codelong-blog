@@ -1,31 +1,33 @@
-import { navbar } from "vuepress-theme-hope";
+import {navbar} from "vuepress-theme-hope";
 
 export default navbar([
-  "/",
-  "/portfolio",
-  "/demo/",
-  {
-    text: "指南",
-    icon: "lightbulb",
-    prefix: "/guide/",
-    children: [
-      {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
-      },
-      {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
-      },
-    ],
-  },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
-  },
+    "/",
+    "/portfolio",
+    {
+        text: "我的项目",
+        icon: "book",
+        prefix: "/projects",
+        children: [
+            {
+                text: "百万级网关系统",
+                icon: "lightbulb",
+                link: "foo"
+            },
+            {
+                text: "畅购通购票系统",
+                icon: "lightbulb",
+                link: "foo"
+            }
+            , {
+                text: "山西大学算法队Online Judge系统",
+                icon: "lightbulb",
+                link: "foo"
+            },
+            {
+                text: "Markdown 渲染",
+                icon: "lightbulb",
+                link: "foo"
+            },
+        ],
+    }
 ]);
