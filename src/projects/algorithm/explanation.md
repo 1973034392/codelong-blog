@@ -13,6 +13,5 @@ description: 基于 Vue3 + TypeScript 的现代化管理后台解决方案
 - 可视化拖拽组件
 - 多环境配置管理
 
-![预览图](/assets/images/project1-preview.png)
 
 ## 安装指南
