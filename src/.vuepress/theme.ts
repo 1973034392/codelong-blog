@@ -7,11 +7,11 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "CodeLong",
+    url: "codelong.top",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/favicon.ico",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -20,11 +20,8 @@ export default hopeTheme({
   // 导航栏
   navbar,
 
-  // 侧边栏
-  sidebar,
 
   // 页脚
-  footer: "默认页脚",
   displayFooter: true,
 
   // 加密配置
@@ -37,10 +34,6 @@ export default hopeTheme({
     },
   },
 
-  // 多语言配置
-  metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
-  },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
@@ -124,7 +117,6 @@ export default hopeTheme({
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",
       repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
       categoryId: "DIC_kwDOG_Pt2M4COD69",
     },
 

@@ -15,7 +15,7 @@ actions:
     type: primary
 
 highlights:
-  - header: 百万级网关系统
+  - header: ⭐⭐⭐⭐⭐百万级网关系统
     bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     features:
@@ -30,7 +30,7 @@ highlights:
         details: 检查 Markdown 链接
         link: ./projects/gateway/explanation
 
-  - header: 畅购通购票系统
+  - header: ⭐⭐⭐⭐畅购通购票系统
     bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
     features:
@@ -46,7 +46,7 @@ highlights:
         icon: network-wired
         details: 基于 RocketMQ 的异步消息处理架构，QPS 达到 10w+
 
-  - header: 山西大学算法队Online Judge系统
+  - header: ⭐⭐⭐山西大学算法队Online Judge系统
     bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     features:
@@ -62,7 +62,7 @@ highlights:
         icon: chart-simple
         details: 使用 Docker 实现多语言沙箱环境，支持 15+ 种编程语言评测
 
-  - header: Markdown 渲染
+  - header: ⭐Markdown 渲染
     bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
     features:
