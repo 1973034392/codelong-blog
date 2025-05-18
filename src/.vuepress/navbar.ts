@@ -2,7 +2,7 @@ import {navbar} from "vuepress-theme-hope";
 
 export default navbar([
     "/",
-    "/portfolio",
+    "/technologyStack/index",
     {
         text: "我的项目",
         icon: "book",

@@ -2,8 +2,11 @@
 home: true
 icon: house
 title: 主页
-heroImage: /logo.png
+heroImage: logo-dark.png
 heroImageDark: /logo-dark.png
+bgImage: /bg1.webp
+bgImageDark: /bg5.webp
+heroFullScreen: true
 bgImageStyle:
   background-attachment: fixed
 heroText: CodeLong的项目文档
@@ -11,13 +14,13 @@ tagline: 在这里可以快速了解我的项目
 actions:
   - text: 关于我
     icon: lightbulb
-    link: ./demo/
+    link: ./about/index
     type: primary
 
 highlights:
   - header: ⭐⭐⭐⭐⭐百万级网关系统
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    bgImage: /bg6.webp
+    bgImageDark: /bg2.webp
     features:
       - title: 项目概述
         icon: fa6-brands:markdown
@@ -31,8 +34,8 @@ highlights:
         link: ./projects/gateway/explanation
 
   - header: ⭐⭐⭐⭐畅购通购票系统
-    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    bgImage: /bg3.webp
+    bgImageDark: /bg4.webp
     features:
       - title: 系统简介
         icon: fa6-brands:markdown
@@ -47,8 +50,8 @@ highlights:
         details: 基于 RocketMQ 的异步消息处理架构，QPS 达到 10w+
 
   - header: ⭐⭐⭐山西大学算法队Online Judge系统
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    bgImage: /bg6.webp
+    bgImageDark: /bg2.webp
     features:
       - title: 系统描述
         icon: fa6-brands:markdown
@@ -63,8 +66,8 @@ highlights:
         details: 使用 Docker 实现多语言沙箱环境，支持 15+ 种编程语言评测
 
   - header: ⭐Markdown 渲染
-    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    bgImage: /bg3.webp
+    bgImageDark: /bg4.webp
     features:
       - title: 功能说明
         icon: fa6-brands:markdown
