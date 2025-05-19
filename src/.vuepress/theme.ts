@@ -20,57 +20,155 @@ export default hopeTheme({
     // 导航栏
     navbar,
 
+    sidebar: [
+        {
+            // 必填，分组标题
+            text: "山西大学算法队OnlineJudge",
+            collapsible: true,
+            // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
+            expanded: true,
+            link: "/projects/algorithm/README.md",
+            // 必填，分组链接列表
+            children: [{
+                // 必填，分组标题
+                text: "后端开发",
+                // 可选，默认为 false
+                collapsible: true,
+                // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
+                expanded: true,
+                // 必填，分组链接列表
+                children: [{
+                    // 必填，分组标题
+                    text: "前期阶段",
+                    // 可选，默认为 false
+                    collapsible: true,
+                    // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
+                    expanded: true,
+                    // 必填，分组链接列表
+                    children: [
+                        "/projects/algorithm/back/pre/项目搭建.md",
+                        "/projects/algorithm/back/pre/配置邮件发送.md",
+                        "/projects/algorithm/back/pre/华为云OBS配置.md",
+                        "/projects/algorithm/back/pre/接口编写.md",
+                    ]
+                }, {
+                    // 必填，分组标题
+                    text: "核心服务",
+                    // 可选，默认为 false
+                    collapsible: true,
+                    // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
+                    expanded: true,
+                    // 必填，分组链接列表
+                    children: [
+                        "/projects/algorithm/back/core/判题模块.md",
+                        "/projects/algorithm/back/core/判题服务优化.md",
+                        "/projects/algorithm/back/core/其他.md",
+                    ]
+                },
+                    "/projects/algorithm/back/split.md",
+                ]
+            }, {
+                // 必填，分组标题
+                text: "前端开发",
+                // 可选，默认为 false
+                collapsible: true,
+                // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
+                expanded: true,
+                // 必填，分组链接列表
+                children: [
+                    "/projects/algorithm/front/pre.md",
+                    "/projects/algorithm/front/main.md",
+                    "/projects/algorithm/front/reconstruction.md",
+                ]
+            }, {
+                // 必填，分组标题
+                text: "数据库表设计",
+                // 可选，默认为 false
+                collapsible: true,
+                // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
+                expanded: true,
+                // 必填，分组链接列表
+                children: [
+                    "/projects/algorithm/sql/design.md",
+                ]
+            }
+            ],
+        }],
 
     // 页脚
     displayFooter: true,
 
     // 加密配置
-    encrypt: {
-        config: {
-            "/demo/encrypt.html": {
-                hint: "Password: 1234",
-                password: "1234",
-            },
-        },
-    },
+    encrypt:
+        {
+            config: {
+                "/demo/encrypt.html":
+                    {
+                        hint: "Password: 1234",
+                        password:
+                            "1234",
+                    }
+                ,
+            }
+            ,
+        }
+    ,
 
 
-    // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
-    // hotReload: true,
+// 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
+// hotReload: true,
 
-    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
+// 此处开启了很多功能用于演示，你应仅保留用到的功能。
     markdown: {
         align: true,
-        attrs: true,
-        codeTabs: true,
-        component: true,
-        demo: true,
-        figure: true,
-        gfm: true,
-        imgLazyload: true,
-        imgSize: true,
-        include: true,
-        mark: true,
-        plantuml: true,
-        spoiler: true,
-        stylize: [
-            {
-                matcher: "Recommended",
-                replacer: ({tag}) => {
-                    if (tag === "em")
-                        return {
-                            tag: "Badge",
-                            attrs: {type: "tip"},
-                            content: "Recommended",
-                        };
+        attrs:
+            true,
+        codeTabs:
+            true,
+        component:
+            true,
+        demo:
+            true,
+        figure:
+            true,
+        gfm:
+            true,
+        imgLazyload:
+            true,
+        imgSize:
+            true,
+        include:
+            true,
+        mark:
+            true,
+        plantuml:
+            true,
+        spoiler:
+            true,
+        stylize:
+            [
+                {
+                    matcher: "Recommended",
+                    replacer: ({tag}) => {
+                        if (tag === "em")
+                            return {
+                                tag: "Badge",
+                                attrs: {type: "tip"},
+                                content: "Recommended",
+                            };
+                    },
                 },
-            },
-        ],
-        sub: true,
-        sup: true,
-        tabs: true,
-        tasklist: true,
-        vPre: true,
+            ],
+        sub:
+            true,
+        sup:
+            true,
+        tabs:
+            true,
+        tasklist:
+            true,
+        vPre:
+            true,
 
         // 取消注释它们如果你需要 TeX 支持
         // math: {
@@ -97,7 +195,8 @@ export default hopeTheme({
         // flowchart: true,
 
         // 在启用之前安装 mermaid
-        mermaid: true,
+        mermaid:
+            true,
 
         // playground: {
         //   presets: ["ts", "vue"],
@@ -108,9 +207,10 @@ export default hopeTheme({
 
         // 在启用之前安装 sandpack-vue3
         // sandpack: true,
-    },
+    }
+    ,
 
-    // 在这里配置主题提供的插件
+// 在这里配置主题提供的插件
     plugins: {
         // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
         // comment: {
@@ -122,11 +222,13 @@ export default hopeTheme({
 
         components: {
             components: ["Badge", "VPCard"],
-        },
+        }
+        ,
 
         icon: {
             prefix: "fa6-solid:",
-        },
+        }
+        ,
 
         // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
         // pwa: {
@@ -184,5 +286,7 @@ export default hopeTheme({
         //     ],
         //   },
         // },
-    },
-});
+    }
+    ,
+})
+;
