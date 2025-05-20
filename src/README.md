@@ -31,7 +31,7 @@ highlights:
       - title: 详细信息
         icon: box-archive
         details: 检查 Markdown 链接
-        link: ./projects/gateway/explanation
+        link: ./projects/gateway/README.md
 
   - header: ⭐⭐⭐⭐畅购通购票系统
     bgImage: /bg3.webp
@@ -40,14 +40,13 @@ highlights:
       - title: 系统简介
         icon: fa6-brands:markdown
         details: 高性能票务交易平台，实现秒杀、座位锁定、分布式事务等复杂业务场景
-        actions:
-          - text: 立即体验
-            link: /projects/ticket-system/
-            icon: ticket
-            type: primary
       - title: 架构特点
         icon: network-wired
         details: 基于 RocketMQ 的异步消息处理架构，QPS 达到 10w+
+      - title: 详细信息
+        icon: box-archive
+        details: 检查 Markdown 链接
+        link: ./projects/easypass/README.md
 
   - header: ⭐⭐⭐山西大学算法队Online Judge系统
     bgImage: /bg6.webp
@@ -56,14 +55,13 @@ highlights:
       - title: 系统描述
         icon: fa6-brands:markdown
         details: 支持 ACM/ICPC 模式，提供实时评测、比赛管理、题目管理等功能
-        actions:
-          - text: 进入系统
-            link: /projects/oj-system/
-            icon: computer
-            type: primary
       - title: 技术特色
         icon: chart-simple
         details: 使用 Docker 实现多语言沙箱环境，支持 15+ 种编程语言评测
+      - title: 详细信息
+        icon: box-archive
+        details: 检查 Markdown 链接
+        link: ./projects/algorithm/README.md
 
   - header: ⭐Markdown 渲染
     bgImage: /bg3.webp
@@ -72,15 +70,12 @@ highlights:
       - title: 功能说明
         icon: fa6-brands:markdown
         details: 支持 CommonMark 规范扩展，实现流程图、数学公式、交互式代码块等特色功能
-        actions:
-          - text: 查看文档
-            link: /projects/md-render/
-            icon: book
-            type: primary
       - title: 集成能力
         icon: puzzle-piece
         details: 支持 VuePress、VitePress 等主流文档框架的插件化集成
+      - title: 详细信息
+        icon: box-archive
+        details: 检查 Markdown 链接
+        link: ./projects/markdown/README.md
 
-copyright: false
-footer: CodeLong © 2025
 ---

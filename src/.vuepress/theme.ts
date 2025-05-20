@@ -1,7 +1,6 @@
 import {hopeTheme} from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
 
 export default hopeTheme({
     hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -20,98 +19,76 @@ export default hopeTheme({
     // 导航栏
     navbar,
 
-    sidebar: [
-        {
-            // 必填，分组标题
-            text: "山西大学算法队OnlineJudge",
-            collapsible: true,
-            // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
-            expanded: true,
-            link: "/projects/algorithm/README.md",
-            // 必填，分组链接列表
-            children: [{
-                // 必填，分组标题
-                text: "后端开发",
-                // 可选，默认为 false
-                collapsible: true,
-                // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
+    sidebar: {
+        // 对特定目录进行结构优化
+        "/projects/algorithm/": [
+            {
+                text: "山西大学算法队OnlineJudge",
+                collapsible: false,
                 expanded: true,
-                // 必填，分组链接列表
-                children: [{
-                    // 必填，分组标题
-                    text: "前期阶段",
-                    // 可选，默认为 false
-                    collapsible: true,
-                    // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
-                    expanded: true,
-                    // 必填，分组链接列表
-                    children: [
-                        "/projects/algorithm/back/pre/项目搭建.md",
-                        "/projects/algorithm/back/pre/配置邮件发送.md",
-                        "/projects/algorithm/back/pre/华为云OBS配置.md",
-                        "/projects/algorithm/back/pre/接口编写.md",
-                    ]
-                }, {
-                    // 必填，分组标题
-                    text: "核心服务",
-                    // 可选，默认为 false
-                    collapsible: true,
-                    // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
-                    expanded: true,
-                    // 必填，分组链接列表
-                    children: [
-                        "/projects/algorithm/back/core/判题模块.md",
-                        "/projects/algorithm/back/core/判题服务优化.md",
-                        "/projects/algorithm/back/core/其他.md",
-                    ]
-                },
-                    "/projects/algorithm/back/split.md",
-                ]
-            }, {
-                // 必填，分组标题
-                text: "前端开发",
-                // 可选，默认为 false
-                collapsible: true,
-                // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
-                expanded: true,
-                // 必填，分组链接列表
+                link: "/projects/algorithm/README.md",
                 children: [
-                    "/projects/algorithm/front/pre.md",
-                    "/projects/algorithm/front/main.md",
-                    "/projects/algorithm/front/reconstruction.md",
-                ]
-            }, {
-                // 必填，分组标题
-                text: "数据库表设计",
-                // 可选，默认为 false
+                    {
+                        text: "后端开发",
+                        collapsible: false,
+                        expanded: true,
+                        children: [
+                            {
+                                text: "前期阶段",
+                                collapsible: true,
+                                children: [
+                                    "/projects/algorithm/back/pre/项目搭建.md",
+                                    "/projects/algorithm/back/pre/配置邮件发送.md",
+                                    "/projects/algorithm/back/pre/华为云OBS配置.md",
+                                    "/projects/algorithm/back/pre/接口编写.md",
+                                ],
+                            },
+                            {
+                                text: "核心服务",
+                                collapsible: true,
+                                children: [
+                                    "/projects/algorithm/back/core/判题模块.md",
+                                    "/projects/algorithm/back/core/判题服务优化.md",
+                                    "/projects/algorithm/back/core/其他.md",
+                                ],
+                            },
+                            "/projects/algorithm/back/split.md", // 单独文件直接挂载
+                        ],
+                    },
+                    {
+                        text: "前端开发",
+                        collapsible: false,
+                        children: [
+                            "/projects/algorithm/front/pre.md",
+                            "/projects/algorithm/front/main.md",
+                            "/projects/algorithm/front/reconstruction.md",
+                        ],
+                    },
+                    {
+                        text: "数据库表设计",
+                        collapsible: false,
+                        children: ["/projects/algorithm/sql/design.md"],
+                    },
+                ],
+            },
+        ],
+        "/projects/gateway/": [
+            {
+                text: "百万级网关系统",
                 collapsible: true,
-                // 可选，表达分可折叠侧边栏组的原始状态，默认为 false
                 expanded: true,
-                // 必填，分组链接列表
-                children: [
-                    "/projects/algorithm/sql/design.md",
-                ]
-            }
-            ],
-        }],
+                link: "/projects/gateway/README.md",
+                children: [],
+            },
+        ],
+    },
 
     // 页脚
     displayFooter: true,
 
     // 加密配置
     encrypt:
-        {
-            config: {
-                "/demo/encrypt.html":
-                    {
-                        hint: "Password: 1234",
-                        password:
-                            "1234",
-                    }
-                ,
-            }
-            ,
-        }
+        {}
     ,
 
 
