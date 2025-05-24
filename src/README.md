@@ -13,7 +13,6 @@ heroText: CodeLong的项目文档
 tagline: 在这里可以快速了解我的项目
 actions:
   - text: 关于我
-    icon: lightbulb
     link: ./about/index
     type: primary
 
