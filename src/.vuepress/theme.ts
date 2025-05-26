@@ -25,17 +25,17 @@ export default hopeTheme({
             {
                 text: "山西大学算法队OnlineJudge",
                 collapsible: false,
-                expanded: true,
+                expanded: false,
                 link: "/projects/algorithm/README.md",
                 children: [
                     {
-                        text: "后端开发",
+                        text: "一、后端开发",
                         collapsible: false,
                         expanded: true,
                         children: [
                             {
                                 text: "前期阶段",
-                                collapsible: true,
+                                collapsible: false,
                                 children: [
                                     "/projects/algorithm/back/pre/项目搭建.md",
                                     "/projects/algorithm/back/pre/配置邮件发送.md",
@@ -45,7 +45,7 @@ export default hopeTheme({
                             },
                             {
                                 text: "核心服务",
-                                collapsible: true,
+                                collapsible: false,
                                 children: [
                                     "/projects/algorithm/back/core/判题模块.md",
                                     "/projects/algorithm/back/core/判题服务优化.md",
@@ -56,7 +56,7 @@ export default hopeTheme({
                         ],
                     },
                     {
-                        text: "前端开发",
+                        text: "二、前端开发",
                         collapsible: false,
                         children: [
                             "/projects/algorithm/front/pre.md",
@@ -65,7 +65,7 @@ export default hopeTheme({
                         ],
                     },
                     {
-                        text: "数据库表设计",
+                        text: "三、数据库表设计",
                         collapsible: false,
                         children: ["/projects/algorithm/sql/design.md"],
                     },
@@ -75,7 +75,7 @@ export default hopeTheme({
         "/projects/gateway/": [
             {
                 text: "百万级网关系统",
-                collapsible: true,
+                collapsible: false,
                 expanded: true,
                 link: "/projects/gateway/README.md",
                 children: [],
