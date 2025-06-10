@@ -78,7 +78,160 @@ export default hopeTheme({
                 collapsible: false,
                 expanded: true,
                 link: "/projects/gateway/README.md",
-                children: [],
+                children: [
+                    {
+                        text: "一、系统架构设计",
+                        collapsible: false,
+                        expanded: true,
+                        link: "/projects/gateway/系统架构设计/系统架构设计.md",
+                        children: []
+                    },
+                    {
+                        text: "二、表结构设计",
+                        collapsible: false,
+                        children: [
+                            {
+                                text: "1. 新版",
+                                collapsible: false,
+                                expanded: true,
+                                children: [
+                                    {
+                                        text: "(1). 表结构设计",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/数据库设计/新版/表结构设计.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(2). 表关系图",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/数据库设计/新版/表关系图.md",
+                                        children: []
+                                    },
+                                ]
+                            },
+                            {
+                                text: "2. 旧版",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/gateway/数据库设计/旧版/表结构设计.md",
+                                children: []
+                            },
+                        ],
+                    },
+                    {
+                        text: "三、项目文档(建设中)",
+                        collapsible: false,
+                        children: [
+                            {
+                                text: "1. 服务注册SDK",
+                                collapsible: false,
+                                expanded: true,
+                                children: [
+                                    {
+                                        text: "(1). 组件说明",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/服务注册SDK/1. 组件说明.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(2). 如何使用",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/服务注册SDK/2. 如何使用.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(3). 详情介绍",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/服务注册SDK/3. 详情介绍.md",
+                                        children: []
+                                    },
+                                ]
+                            },
+                            {
+                                text: "2. 网关中心",
+                                collapsible: false,
+                                expanded: true,
+                                children: [
+                                    {
+                                        text: "(1). 项目初期配置",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/1. 项目初期配置.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(2). 雪花算法生成唯一id",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/2. 雪花算法生成唯一id.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(3). 基本CRUD接口编写",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/3. 基本CRUD接口编写.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(4). 接口和方法信息注册",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/4. 接口和方法信息注册.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(5). 接口信息同步",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/5. 接口信息同步.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(6). 心跳续约机制",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/6. 心跳续约机制.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(7). NGINX配置刷新",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/7. NGINX配置刷新.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(8). 事件通知",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/8. 事件通知.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(9). 自定义注册中心",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/9. 自定义注册中心.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(10). Redis过期事件监听",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/10. Redis过期事件监听.md",
+                                        children: []
+                                    },
+                                ]
+                            },
+                        ],
+                    },
+                ],
             },
         ],
     },
