@@ -52,7 +52,8 @@ export default hopeTheme({
                                     "/projects/algorithm/back/core/其他.md",
                                 ],
                             },
-                            "/projects/algorithm/back/split.md", // 单独文件直接挂载
+                            "/projects/algorithm/back/split.md",
+                            "/projects/algorithm/back/判题机相关.md",
                         ],
                     },
                     {
