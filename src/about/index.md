@@ -22,7 +22,7 @@ sidebar: false
 
 开始了解到各种就业方向,最终选择了Java后端开发,然后在五一开始学习JavaSE,学了一个月就准备期末考试了
 
-在大一下的暑假又自学了JavaWeb、Spring、SpringMVC、Mybatis、SpringBoot,然后又做了黑马程序员的苍穹外卖项目
+在大一下的暑假又自学了Spring、SpringMVC、Mybatis、SpringBoot,然后又做了黑马程序员的苍穹外卖项目
 
 ### 大二上
 
