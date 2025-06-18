@@ -21,6 +21,46 @@ export default hopeTheme({
 
     sidebar: {
         // 对特定目录进行结构优化
+        "/8gu/": [
+            {
+                text: "八股知识分享",
+                collapsible: false,
+                expanded: false,
+                link: "/8gu/README.md",
+                children: [
+                    {
+                        text: "Java基础",
+                        collapsible: false,
+                        link: "/8gu/Java基础.md"
+                    },
+                    {
+                        text: "JUC",
+                        collapsible: false,
+                        link: "/8gu/JUC.md"
+                    },
+                    {
+                        text: "JVM",
+                        collapsible: false,
+                        link: "/8gu/JVM.md"
+                    },
+                    {
+                        text: "MySQL",
+                        collapsible: false,
+                        link: "/8gu/Mysql.md"
+                    },
+                    {
+                        text: "Spring",
+                        collapsible: false,
+                        link: "/8gu/Spring.md"
+                    },
+                    {
+                        text: "SpringCloud",
+                        collapsible: false,
+                        link: "/8gu/SpringCloud.md"
+                    }
+                ],
+            },
+        ],
         "/projects/algorithm/": [
             {
                 text: "山西大学算法队OnlineJudge",

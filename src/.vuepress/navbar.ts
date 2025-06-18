@@ -4,6 +4,11 @@ export default navbar([
     "/",
     "/technologyStack/index",
     {
+        text: "八股",
+        icon: "calendar",
+        link: "/8gu/README.md",
+    },
+    {
         text: "百万级网关系统",
         icon: "lightbulb",
         link: "/projects/gateway/README.md",
