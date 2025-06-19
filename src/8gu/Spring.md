@@ -117,7 +117,7 @@ class Test {
 
 ## Springboot是如何实现自动配置的
 
-SpringBoot通过Spring 的条件配置决定哪些bean可以被配置，将这些条件定义成具体的Configuration，然后将这些Configuration配置到spring.factories文件中（这种方式Springboot 2.7.0版本已不建议使用，最新的方式是使用/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports ）
+SpringBoot通过Spring 的条件配置决定哪些bean可以被配置，将这些条件定义成具体的Configuration，然后将这些Configuration配置到spring.factories文件中(这种方式Springboot 2.7.0版本已不建议使用，最新的方式是使用/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports)
 
 作为key: org.springframework.boot.autoconfigure.EnableAutoConfiguration的值
 
@@ -125,13 +125,13 @@ SpringBoot通过Spring 的条件配置决定哪些bean可以被配置，将这�
 
 ## 什么是Spring的三级缓存
 
-**singletonObjects是一级缓存，存储的是完整创建好的单例bean对象。**在创建一个单例bean时，会先从singletonObjects中尝试获取该bean的实例，如果能够获取到，则直接返回该实例，否则继续创建该bean。
+**singletonObjects是一级缓存，存储的是完整创建好的单例bean对象。** 在创建一个单例bean时，会先从singletonObjects中尝试获取该bean的实例，如果能够获取到，则直接返回该实例，否则继续创建该bean。
 
 
 
-**earlySingletonObjects是二级缓存，存储的是尚未完全创建好的单例bean对象。**在创建单例bean时，如果发现该bean存在循环依赖，则会先创建该bean的"半成品"对象，并将"半成品"对象存储到earlySingletonObjects中。当循环依赖的bean创建完成后，Spring会将完整的bean实例对象存储到singletonObjects中，并将earlySingletonObjects中存储的代理对象替换为完整的bean实例对象。这样可以保证单例bean的创建过程不会出现循环依赖问题。
+**earlySingletonObjects是二级缓存，存储的是尚未完全创建好的单例bean对象。** 在创建单例bean时，如果发现该bean存在循环依赖，则会先创建该bean的"半成品"对象，并将"半成品"对象存储到earlySingletonObjects中。当循环依赖的bean创建完成后，Spring会将完整的bean实例对象存储到singletonObjects中，并将earlySingletonObjects中存储的代理对象替换为完整的bean实例对象。这样可以保证单例bean的创建过程不会出现循环依赖问题。
 
 
 
-**singletonFactories是三级缓存，存储的是单例bean的创建工厂。**当一个单例bean被创建时，Spring会先将该bean的创建工厂存储到singletonFactories中，然后再执行创建工厂的getObject()方法，生成该bean的实例对象。在该bean被其他bean引用时，Spring会从singletonFactories中获取该bean的创建工厂，创建出该bean的实例对象，并将该bean的实例对象存储到singletonObjects中。
+**singletonFactories是三级缓存，存储的是单例bean的创建工厂。** 当一个单例bean被创建时，Spring会先将该bean的创建工厂存储到singletonFactories中，然后再执行创建工厂的getObject()方法，生成该bean的实例对象。在该bean被其他bean引用时，Spring会从singletonFactories中获取该bean的创建工厂，创建出该bean的实例对象，并将该bean的实例对象存储到singletonObjects中。
 
