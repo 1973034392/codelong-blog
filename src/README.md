@@ -23,13 +23,13 @@ highlights:
     features:
       - title: 项目概述
         icon: fa6-brands:markdown
-        details: 分布式微服务网关，支持百万级并发请求处理，提供熔断降级、流量控制等核心能力
+        details: 分布式微服务网关，支持百万级并发请求处理，提供请求限流,鉴权,熔断等核心能力
       - title: 技术亮点
         icon: code
-        details: Spring Cloud Gateway + Netty + Nacos 实现动态路由配置
+        details: 自定义SDK + Netty + 网关中心 实现动态路由配置
       - title: 详细信息
         icon: box-archive
-        details: 检查 Markdown 链接
+        details: 查看详情
         link: ./projects/gateway/README.md
 
   - header: ⭐⭐⭐⭐畅购通购票系统
@@ -44,7 +44,7 @@ highlights:
         details: 基于 RocketMQ 的异步消息处理架构，QPS 达到 10w+
       - title: 详细信息
         icon: box-archive
-        details: 检查 Markdown 链接
+        details: 查看详情
         link: ./projects/easypass/README.md
 
   - header: ⭐⭐⭐山西大学算法队Online Judge系统
@@ -56,10 +56,10 @@ highlights:
         details: 支持 ACM/ICPC 模式，提供实时评测、比赛管理、题目管理等功能
       - title: 技术特色
         icon: chart-simple
-        details: 使用 Docker 实现多语言沙箱环境，支持 15+ 种编程语言评测
+        details: 使用 Docker/判题机 实现多语言沙箱环境，支持 15+ 种编程语言评测
       - title: 详细信息
         icon: box-archive
-        details: 检查 Markdown 链接
+        details: 查看详情
         link: ./projects/algorithm/README.md
 
   - header: ⭐Markdown 渲染
@@ -74,7 +74,7 @@ highlights:
         details: 支持 VuePress、VitePress 等主流文档框架的插件化集成
       - title: 详细信息
         icon: box-archive
-        details: 检查 Markdown 链接
+        details: 查看详情
         link: ./projects/markdown/README.md
 
 ---
