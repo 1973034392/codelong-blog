@@ -1,5 +1,5 @@
 ---
-title: 技术栈
+title: 我的技术栈
 icon: gears
 sidebar: false
 ---

@@ -227,45 +227,115 @@ export default hopeTheme({
                                         children: []
                                     },
                                     {
-                                        text: "(5). 接口信息同步",
+                                        text: "(5). 心跳续约机制",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/网关中心/5. 接口信息同步.md",
+                                        link: "/projects/gateway/项目文档/网关中心/5. 心跳续约机制.md",
                                         children: []
                                     },
                                     {
-                                        text: "(6). 心跳续约机制",
+                                        text: "(6). NGINX配置刷新",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/网关中心/6. 心跳续约机制.md",
+                                        link: "/projects/gateway/项目文档/网关中心/6. NGINX配置刷新.md",
                                         children: []
                                     },
                                     {
-                                        text: "(7). NGINX配置刷新",
+                                        text: "(7). 事件通知",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/网关中心/7. NGINX配置刷新.md",
+                                        link: "/projects/gateway/项目文档/网关中心/7. 事件通知.md",
                                         children: []
                                     },
                                     {
-                                        text: "(8). 事件通知",
+                                        text: "(8). Redis过期事件监听",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/网关中心/8. 事件通知.md",
+                                        link: "/projects/gateway/项目文档/网关中心/8. Redis过期事件监听.md",
+                                        children: []
+                                    },
+                                ]
+                            },
+                            {
+                                text: "3. 网关核心服务",
+                                collapsible: false,
+                                expanded: true,
+                                children: [
+                                    {
+                                        text: "(1). 贯穿服务的全局配置",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/1. 贯穿服务的全局配置.md",
                                         children: []
                                     },
                                     {
-                                        text: "(9). 自定义注册中心",
+                                        text: "(2). 请求处理的整个流程",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/网关中心/9. 自定义注册中心.md",
+                                        link: "/projects/gateway/项目文档/核心服务/2. 请求处理的整个流程.md",
                                         children: []
                                     },
                                     {
-                                        text: "(10). Redis过期事件监听",
+                                        text: "(3). 如何进行请求鉴权",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/网关中心/10. Redis过期事件监听.md",
+                                        link: "/projects/gateway/项目文档/核心服务/3. 如何进行请求鉴权.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(4). 自定义熔断是怎么实现的",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/4. 自定义熔断是怎么实现的.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(5). 请求的整个解析流程",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/5. 请求的整个解析流程.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(6). 请求调用与结果包装",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/6. 请求调用与结果包装.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(7). 自定义连接源缓存池",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/7. 自定义连接源缓存池.md",
+                                        children: []
+                                    },
+                                ]
+                            },
+                            {
+                                text: "4. 服务发送SDK",
+                                collapsible: false,
+                                expanded: true,
+                                children: [
+                                    {
+                                        text: "(1). 组件说明",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/服务发送SDK/1. 组件说明.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(2). 如何使用",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/服务发送SDK/2. 如何使用.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(3). 详情介绍",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/服务发送SDK/3. 详情介绍.md",
                                         children: []
                                     },
                                 ]
@@ -273,6 +343,15 @@ export default hopeTheme({
                         ],
                     },
                 ],
+            },
+        ],
+        "/projects/easypass/": [
+            {
+                text: "畅购通购票系统",
+                collapsible: false,
+                expanded: false,
+                link: "/projects/easypass/README.md",
+                children: [],
             },
         ],
     },
