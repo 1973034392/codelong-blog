@@ -135,3 +135,74 @@ JDK 1.8 ConcurrentHashMap JDK 1.8 ConcurrentHashMap 主要通过 volatile + CAS 
 如果把上面的执行用一句话归纳的话，就相当于是ConcurrentHashMap通过对头结点加锁来保证线程安全的，锁的粒度相比 Segment 来说更小了，发生冲突和加锁的频率降低了，并发操作的性能就提高了。
 
 而且 JDK 1.8 使用的是红黑树优化了之前的固定链表，那么当数据量比较大的时候，查询性能也得到了很大的提升，从之前的 O(n) 优化到了 O(logn) 的时间复杂度。
+
+
+
+## Linux常用的命令有哪些
+
+以下是一份**Linux常用命令速查表**，涵盖文件操作、系统管理、网络工具等核心场景：
+
+------
+
+### 📂文件与目录操作
+
+|    **命令**     |       **作用**        |            **常用示例**             |
+| :-------------: | :-------------------: | :---------------------------------: |
+|      `ls`       |     列出目录内容      |   `ls -alh`（详细列表含隐藏文件）   |
+|      `cd`       |       切换目录        |        `cd ~`（返回家目录）         |
+|      `pwd`      |     显示当前路径      |                `pwd`                |
+|     `mkdir`     |       创建目录        |  `mkdir -p dir1/dir2`（递归创建）   |
+|     `rmdir`     |      删除空目录       |          `rmdir empty_dir`          |
+|      `cp`       |       复制文件        | `cp -r dir1/ dir2/`（递归复制目录） |
+|      `mv`       |    移动/重命名文件    |        `mv old.txt new.txt`         |
+|      `rm`       |       删除文件        |   `rm -rf dir/`（⚠️强制递归删除）    |
+|     `touch`     | 创建空文件/更新时间戳 |          `touch file.txt`           |
+|      `cat`      |     显示文件内容      |           `cat file.txt`            |
+| `less` / `more` |     分页查看文件      |    `less -N log.log`（显示行号）    |
+| `head` / `tail` |   查看文件头部/尾部   |  `tail -f app.log`（实时追踪日志）  |
+|     `find`      |       搜索文件        |     `find /home -name "*.conf"`     |
+|     `grep`      |       文本搜索        |     `grep -r "error" /var/log/`     |
+|     `chmod`     |       修改权限        |        `chmod 755 script.sh`        |
+|     `chown`     |      修改所有者       |     `chown user:group file.txt`     |
+
+------
+
+### 💻系统与进程管理
+
+|    **命令**    |     **作用**     |           **常用示例**            |
+| :------------: | :--------------: | :-------------------------------: |
+|      `ps`      |     查看进程     |       `ps -ef | grep nginx`       |
+| `top` / `htop` | 动态监控进程资源 |   `top -u mysql`（按用户过滤）    |
+|     `kill`     |     终止进程     |    `kill -9 12345`（强制终止）    |
+|  `systemctl`   |   系统服务管理   |    `systemctl restart apache2`    |
+|      `df`      |   磁盘空间统计   | `df -hT`（人类可读+文件系统类型） |
+|      `du`      |   目录空间占用   |    `du -sh /var/`（汇总大小）     |
+|     `free`     |   内存使用情况   |       `free -m`（以MB显示）       |
+|    `uname`     |     系统信息     |     `uname -a`（内核版本等）      |
+|    `uptime`    |   系统运行时间   |       `uptime`（负载情况）        |
+
+------
+
+### 🌐网络工具
+
+|     **命令**      |      **作用**      |          **常用示例**          |
+| :---------------: | :----------------: | :----------------------------: |
+|      `ping`       |   测试网络连通性   |     `ping -c 4 google.com`     |
+| `ifconfig` / `ip` |    网络接口配置    |  `ip addr show`（查看IP地址）  |
+|     `netstat`     |    网络连接状态    |  `netstat -tulpn`（监听端口）  |
+|       `ss`        | 更高效的socket统计 |    `ss -ltn`（监听TCP端口）    |
+|      `curl`       |    网络数据传输    | `curl -I https://example.com`  |
+|      `wget`       |      下载文件      |   `wget -c http://file.zip`    |
+|       `ssh`       |      远程登录      |    `ssh user@192.168.1.100`    |
+|       `scp`       |    安全传输文件    | `scp file.txt user@host:/tmp/` |
+|   `traceroute`    |      路由追踪      |    `traceroute example.com`    |
+
+------
+
+### 📦压缩与解压
+
+|     **命令**      |   **作用**    |                         **常用示例**                         |
+| :---------------: | :-----------: | :----------------------------------------------------------: |
+|       `tar`       |   打包/解包   | `tar -czvf backup.tar.gz dir/`（压缩） `tar -xzvf backup.tar.gz`（解压） |
+| `gzip` / `gunzip` | .gz压缩/解压  |                `gzip file.txt` → file.txt.gz                 |
+|  `zip` / `unzip`  | .zip压缩/解压 |                `unzip archive.zip -d target/`                |
