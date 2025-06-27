@@ -290,10 +290,10 @@ export default hopeTheme({
                                         children: []
                                     },
                                     {
-                                        text: "(5). 请求的整个解析流程",
+                                        text: "(5). 请求的解析流程",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/核心服务/5. 请求的整个解析流程.md",
+                                        link: "/projects/gateway/项目文档/核心服务/5. 请求的解析流程.md",
                                         children: []
                                     },
                                     {
