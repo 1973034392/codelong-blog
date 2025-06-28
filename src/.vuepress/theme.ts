@@ -307,7 +307,7 @@ export default hopeTheme({
                                         text: "(7). 自定义连接源缓存池",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/核心服务/7. 自定义连接源缓存池.md",
+                                        link: "/projects/gateway/项目文档/核心服务/7. 自定义缓存池.md",
                                         children: []
                                     },
                                 ]
