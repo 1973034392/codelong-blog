@@ -262,6 +262,13 @@ export default hopeTheme({
                                 expanded: true,
                                 children: [
                                     {
+                                        text: "(0). 项目的结构是怎么样的",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/0. 项目的结构是怎么样的.md",
+                                        children: []
+                                    },
+                                    {
                                         text: "(1). 贯穿服务的全局配置",
                                         collapsible: false,
                                         expanded: true,
@@ -290,10 +297,10 @@ export default hopeTheme({
                                         children: []
                                     },
                                     {
-                                        text: "(5). 请求的解析流程",
+                                        text: "(5). 请求是怎么解析的",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/核心服务/5. 请求的解析流程.md",
+                                        link: "/projects/gateway/项目文档/核心服务/5. 请求是怎么解析的.md",
                                         children: []
                                     },
                                     {

@@ -27,6 +27,10 @@ highlights:
       - title: 技术亮点
         icon: code
         details: 自定义SDK + Netty + 网关中心 实现动态路由配置
+      - title: 项目地址
+        icon: lightbulb
+        details: 在GitHub上查看该项目
+        link: https://github.com/1973034392/api-gateway-codelong
       - title: 详细信息
         icon: box-archive
         details: 查看详情
