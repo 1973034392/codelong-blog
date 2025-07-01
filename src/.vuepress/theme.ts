@@ -162,7 +162,7 @@ export default hopeTheme({
                         ],
                     },
                     {
-                        text: "三、项目文档(建设中)",
+                        text: "三、项目文档",
                         collapsible: false,
                         children: [
                             {
@@ -320,7 +320,7 @@ export default hopeTheme({
                                 ]
                             },
                             {
-                                text: "4. 服务发送SDK",
+                                text: "4. 服务发送SDK(建设中)",
                                 collapsible: false,
                                 expanded: true,
                                 children: [
