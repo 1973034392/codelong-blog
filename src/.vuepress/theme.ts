@@ -317,6 +317,13 @@ export default hopeTheme({
                                         link: "/projects/gateway/项目文档/核心服务/7. 自定义接口缓存池.md",
                                         children: []
                                     },
+                                    {
+                                        text: "(8). 基于SPI机制实现多执行器扩展",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/8. 基于SPI机制实现多执行器扩展.md",
+                                        children: []
+                                    },
                                 ]
                             },
                             {
