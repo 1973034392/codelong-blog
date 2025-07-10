@@ -327,7 +327,7 @@ export default hopeTheme({
                                 ]
                             },
                             {
-                                text: "4. 服务发送SDK(建设中)",
+                                text: "4. 服务发送SDK",
                                 collapsible: false,
                                 expanded: true,
                                 children: [
