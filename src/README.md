@@ -2,10 +2,10 @@
 home: true
 icon: house
 title: 主页
-heroImage: https://codelong197.oss-cn-beijing.aliyuncs.com/logo.png?Expires=1752204752&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=QDXOr%2B9DH5PL81ZFTQ0GTS7r7Xg%3D
-heroImageDark: https://codelong197.oss-cn-beijing.aliyuncs.com/logo-dark.png?Expires=1752204737&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=ryoe5G%2FZMAB2ku%2FMKNTUzwmsrpQ%3D
-bgImage: https://codelong197.oss-cn-beijing.aliyuncs.com/bg1.webp?Expires=1752204635&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=UcO8dAwAq24JNv%2FU1UU6ICdEraw%3D
-bgImageDark: https://codelong197.oss-cn-beijing.aliyuncs.com/bg5.webp?Expires=1752204708&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=NTOfNj0v5kmZir1rCly6k0I8NvY%3D
+heroImage: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/logo.png
+heroImageDark: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/logo-dark.png
+bgImage: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg1.webp
+bgImageDark: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg5.webp
 heroFullScreen: true
 bgImageStyle:
   background-attachment: fixed
@@ -18,8 +18,8 @@ actions:
 
 highlights:
   - header: ⭐⭐⭐⭐⭐百万级网关系统
-    bgImage: https://codelong197.oss-cn-beijing.aliyuncs.com/bg6.webp?Expires=1752204722&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=jNJC%2B%2BPtqaq6vO64t7JGjwxjz3U%3D
-    bgImageDark: https://codelong197.oss-cn-beijing.aliyuncs.com/bg2.webp?Expires=1752204669&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=O3kbwFgpkvgSVJ66PNkRGw6OuPc%3D
+    bgImage: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg6.webp
+    bgImageDark: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg2.webp
     features:
       - title: 项目概述
         icon: fa6-brands:markdown
@@ -37,8 +37,8 @@ highlights:
         link: ./projects/gateway/README.md
 
   - header: ⭐⭐⭐⭐畅购通购票系统
-    bgImage: https://codelong197.oss-cn-beijing.aliyuncs.com/bg3.webp?Expires=1752204685&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=RkaAr0lchEI9ORw2yj6ts3DMQH8%3D
-    bgImageDark: https://codelong197.oss-cn-beijing.aliyuncs.com/bg4.webp?Expires=1752204697&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=kf2HAc8jBdHipyJumW0YJTJjV1E%3D
+    bgImage: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg3.webp
+    bgImageDark: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg4.webp
     features:
       - title: 系统简介
         icon: fa6-brands:markdown
@@ -52,8 +52,8 @@ highlights:
         link: ./projects/easypass/README.md
 
   - header: ⭐⭐⭐山西大学算法队Online Judge系统
-    bgImage: https://codelong197.oss-cn-beijing.aliyuncs.com/bg6.webp?Expires=1752204722&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=jNJC%2B%2BPtqaq6vO64t7JGjwxjz3U%3D
-    bgImageDark: https://codelong197.oss-cn-beijing.aliyuncs.com/bg2.webp?Expires=1752204669&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=O3kbwFgpkvgSVJ66PNkRGw6OuPc%3D
+    bgImage: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg6.webp
+    bgImageDark: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg2.webp
     features:
       - title: 系统描述
         icon: fa6-brands:markdown
@@ -67,8 +67,8 @@ highlights:
         link: ./projects/algorithm/README.md
 
   - header: ⭐Markdown 渲染
-    bgImage: https://codelong197.oss-cn-beijing.aliyuncs.com/bg3.webp?Expires=1752204685&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=RkaAr0lchEI9ORw2yj6ts3DMQH8%3D
-    bgImageDark: https://codelong197.oss-cn-beijing.aliyuncs.com/bg4.webp?Expires=1752204697&OSSAccessKeyId=TMP.3KrbRdqU3S62uPCncVRofpJqc4S9mNzf9biJ1jief7LPhLeMX2SpHGKuhce83zdQuwqWtSehxz8a4ybwbTXUQequGrVa7g&Signature=kf2HAc8jBdHipyJumW0YJTJjV1E%3D
+    bgImage: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg3.webp
+    bgImageDark: https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/bg4.webp
     features:
       - title: 功能说明
         icon: fa6-brands:markdown
