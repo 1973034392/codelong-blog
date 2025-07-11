@@ -1,16 +1,16 @@
-import { defineUserConfig } from "vuepress";
+import {defineUserConfig} from "vuepress";
 
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
+    base: "/",
 
-  lang: "zh-CN",
-  title: "CodeLong",
-  description: "CodeLong 的项目文档",
+    lang: "zh-CN",
+    title: "CodeLong",
+    description: "CodeLong 的项目文档",
 
-  theme,
+    theme: theme,
 
-  // 和 PWA 一起启用
-  // shouldPrefetch: false,
+    // 和 PWA 一起启用
+    // shouldPrefetch: false,
 });
