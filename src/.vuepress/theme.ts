@@ -29,7 +29,7 @@ export default hopeTheme({
                 link: "/8gu/README.md",
                 children: [
                     {
-                        text: "Java基础1111",
+                        text: "Java基础",
                         collapsible: false,
                         link: "/8gu/Java基础.md"
                     },
