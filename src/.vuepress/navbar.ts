@@ -19,13 +19,13 @@ export default navbar([
         link: "/projects/easypass/README.md",
     },
     {
-        text: "山西大学算法队OJ系统",
-        icon: "lightbulb",
-        link: "/projects/algorithm/README.md",
-    },
-    {
         text: "Markdown 渲染",
         icon: "lightbulb",
         link: "/projects/markdown/README.md",
+    },
+    {
+        text: "山西大学算法队OJ系统",
+        icon: "lightbulb",
+        link: "/projects/algorithm/README.md",
     },
 ]);
