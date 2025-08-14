@@ -365,7 +365,126 @@ export default hopeTheme({
                 collapsible: false,
                 expanded: false,
                 link: "/projects/easypass/README.md",
-                children: [],
+                children: [
+                    {
+                        text: "一、表结构设计",
+                        collapsible: false,
+                        link: "/projects/easypass/数据库表.md",
+                    },
+                    {
+                        text: "二、核心业务功能",
+                        collapsible: false,
+                        children: [
+                            {
+                                text: "1. 系统分库分表详解",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/系统分库分表详解.md",
+                            },
+                            {
+                                text: "2. 参数加解密",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/参数加解密.md",
+                                children: []
+                            },
+                            {
+                                text: "3. 订单服务详解",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/订单服务详解.md",
+                                children: []
+                            },
+                            {
+                                text: "4. 节目服务详解",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/节目服务详解.md",
+                                children: []
+                            },
+                            {
+                                text: "5. 用户服务详解",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/用户服务详解.md",
+                                children: []
+                            },
+                            {
+                                text: "6. 支付服务详解",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/支付服务详解.md",
+                                children: []
+                            },
+                            {
+                                text: "7. API接口定制化防刷与数据存储策略详解",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/API接口定制化防刷与数据存储策略详解.md",
+                                children: []
+                            },
+                        ],
+                    },
+                    {
+                        text: "三、核心组件设计",
+                        collapsible: false,
+                        children: [
+                            {
+                                text: "1. 分布式id组件",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/分布式id组件.md",
+                            },
+                            {
+                                text: "2. 图形验证码组件",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/图形验证码.md",
+                                children: []
+                            },
+                            {
+                                text: "3. 限流组件设计",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/限流组件.md",
+                                children: []
+                            },
+                            {
+                                text: "4. 分布式锁组件",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/分布式锁.md",
+                                children: []
+                            },
+                            {
+                                text: "5. 幂等组件",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/用户服务详解.md",
+                                children: []
+                            },
+                            {
+                                text: "6. 高效线程池组件",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/线程池组件.md",
+                                children: []
+                            },
+                        ],
+                    },
+                    {
+                        text: "四、其他",
+                        collapsible: false,
+                        children: [
+                            {
+                                text: "1. 数据预加载",
+                                collapsible: false,
+                                expanded: true,
+                                link: "/projects/easypass/ES预加载.md",
+                            }
+                        ],
+                    },
+                ],
             },
         ],
     },
@@ -493,63 +612,6 @@ export default hopeTheme({
             prefix: "fa6-solid:",
         }
         ,
-
-        // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
-        // pwa: {
-        //   favicon: "/favicon.ico",
-        //   cacheHTML: true,
-        //   cacheImage: true,
-        //   appendBase: true,
-        //   apple: {
-        //     icon: "/assets/icon/apple-icon-152.png",
-        //     statusBarColor: "black",
-        //   },
-        //   msTile: {
-        //     image: "/assets/icon/ms-icon-144.png",
-        //     color: "#ffffff",
-        //   },
-        //   manifest: {
-        //     icons: [
-        //       {
-        //         src: "/assets/icon/chrome-mask-512.png",
-        //         sizes: "512x512",
-        //         purpose: "maskable",
-        //         type: "image/png",
-        //       },
-        //       {
-        //         src: "/assets/icon/chrome-mask-192.png",
-        //         sizes: "192x192",
-        //         purpose: "maskable",
-        //         type: "image/png",
-        //       },
-        //       {
-        //         src: "/assets/icon/chrome-512.png",
-        //         sizes: "512x512",
-        //         type: "image/png",
-        //       },
-        //       {
-        //         src: "/assets/icon/chrome-192.png",
-        //         sizes: "192x192",
-        //         type: "image/png",
-        //       },
-        //     ],
-        //     shortcuts: [
-        //       {
-        //         name: "Demo",
-        //         short_name: "Demo",
-        //         url: "/demo/",
-        //         icons: [
-        //           {
-        //             src: "/assets/icon/guide-maskable.png",
-        //             sizes: "192x192",
-        //             purpose: "maskable",
-        //             type: "image/png",
-        //           },
-        //         ],
-        //       },
-        //     ],
-        //   },
-        // },
     }
     ,
 })
