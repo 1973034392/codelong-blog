@@ -24,42 +24,184 @@ export default hopeTheme({
         "/8gu/": [
             {
                 text: "八股知识分享",
-                collapsible: false,
-                expanded: false,
+                collapsible: true,
+                expanded: true,
                 link: "/8gu/README.md",
                 children: [
                     {
                         text: "Java基础",
-                        collapsible: false,
-                        link: "/8gu/Java基础.md"
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "五种IO模型",
+                                link: "/8gu/5种IO模型.md"
+                            },
+                            {
+                                text: "Hashmap,ConcurrentHashmap详解",
+                                link: "/8gu/Hashmap,ConcurrentHashmap以及它们各个JDK下的差异.md"
+                            },
+                            {
+                                text: "JDK动态代理和CGlib动态代理的区别",
+                                link: "/8gu/JDK动态代理和CGlib动态代理的区别.md"
+                            },
+                            {
+                                text: "SPI 机制详解",
+                                link: "/8gu/SPI 机制详解.md"
+                            },
+                            {
+                                text: "ThreadLocal 全面解析",
+                                link: "/8gu/ThreadLocal 全面解析.md"
+                            }
+                        ]
+                    },
+                    {
+                        text: "Mysql",
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "MVCC原理与实现",
+                                link: "/8gu/MVCC原理与实现.md"
+                            },
+                            {
+                                text: "✨Mysql三种日志",
+                                link: "https://resource-3ac.pages.dev/Mysql三种日志"
+                            },
+                            {
+                                text: "BufferPool的缓存清除策略详解",
+                                link: "/8gu/BufferPool的缓存清除策略详解.md"
+                            },
+                            {
+                                text: "✨SQL优化",
+                                link: "https://resource-3ac.pages.dev/sql优化"
+                            },
+                            {
+                                text: "✨介绍一下MySql的各种锁",
+                                link: "https://resource-3ac.pages.dev/介绍一下MySql的各种锁"
+                            }
+                        ]
                     },
                     {
                         text: "JUC",
-                        collapsible: false,
-                        link: "/8gu/JUC.md"
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "AQS原理深入解析",
+                                link: "/8gu/AQS原理深入解析.md"
+                            },
+                            {
+                                text: "JUC工具类",
+                                link: "/8gu/JUC工具类.md"
+                            },
+                            {
+                                text: "Synchronized详解",
+                                link: "/8gu/Synchronized详解.md"
+                            },
+                            {
+                                text: "线程池核心参数解析",
+                                link: "/8gu/线程池核心参数解析.md"
+                            }
+                        ]
                     },
                     {
                         text: "JVM",
-                        collapsible: false,
-                        link: "/8gu/JVM.md"
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "JIT优化及逃逸分析",
+                                link: "/8gu/JIT优化及逃逸分析.md"
+                            },
+                            {
+                                text: "JVM垃圾回收算法和回收器详解",
+                                link: "/8gu/JVM垃圾回收算法和回收器详解.md"
+                            },
+                            {
+                                text: "✨类的生命周期",
+                                link: "https://resource-3ac.pages.dev/类的生命周期"
+                            },
+                            {
+                                text: "什么是JMM",
+                                link: "/8gu/什么是JMM.md"
+                            },
+                            {
+                                text: "双亲委派机制",
+                                link: "/8gu/双亲委派机制.md"
+                            },
+                            {
+                                text: "不同JDK版本中字符串常量池的差异",
+                                link: "/8gu/不同JDK版本中字符串常量池的演进.md"
+                            }
+                        ]
                     },
                     {
-                        text: "MySQL",
-                        collapsible: false,
-                        link: "/8gu/Mysql.md"
+                        text: "Redis",
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "BitMap和流量统计",
+                                link: "/8gu/BitMap和流量统计.md"
+                            },
+                            {
+                                text: "✨Redis Stream",
+                                link: "https://resource-3ac.pages.dev/Redis Stream"
+                            },
+                            {
+                                text: "Redisson 分布式锁：全面解析",
+                                link: "/8gu/Redisson 分布式锁：全面解析.md"
+                            }
+                        ]
                     },
                     {
                         text: "Spring",
-                        collapsible: false,
-                        link: "/8gu/Spring.md"
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "✨Bean的初始化流程和生命周期",
+                                link: "https://resource-3ac.pages.dev/Bean的初始化流程和生命周期"
+                            },
+                            {
+                                text: "✨SpringBoot自动配置",
+                                link: "https://resource-3ac.pages.dev/SpringBoot自动配置"
+                            },
+                            {
+                                text: "介绍一下IOC和AOP",
+                                link: "/8gu/介绍一下IOC和AOP.md"
+                            },
+                            {
+                                text: "循环依赖",
+                                link: "/8gu/循环依赖.md"
+                            }
+                        ]
                     },
                     {
-                        text: "SpringCloud",
-                        collapsible: false,
-                        link: "/8gu/SpringCloud.md"
+                        text: "RocketMQ",
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "✨RocketMQ事务消息",
+                                link: "https://resource-3ac.pages.dev/Rocketmq事务消息"
+                            },
+                            {
+                                text: "✨RocketMQ消息可靠性",
+                                link: "https://resource-3ac.pages.dev/RocketMQ消息可靠性"
+                            }
+                        ]
+                    },
+                    {
+                        text: "其他",
+                        collapsible: true,
+                        children: [
+                            {
+                                text: "✨ElasticSearch为什么快深度分页怎么解决",
+                                link: "https://resource-3ac.pages.dev/ElasticSearch为什么快深度分页怎么解决"
+                            },
+                            {
+                                text: "零拷贝详解",
+                                link: "/8gu/零拷贝详解.md"
+                            }
+                        ]
                     }
-                ],
-            },
+                ]
+            }
         ],
         "/projects/algorithm/": [
             {
