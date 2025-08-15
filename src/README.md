@@ -42,10 +42,10 @@ highlights:
     features:
       - title: 系统简介
         icon: fa6-brands:markdown
-        details: 高性能票务交易平台，实现秒杀、座位锁定、分布式事务等复杂业务场景
+        details: 高性能票务交易平台，实现秒杀、座位锁定、延迟关单等复杂业务场景
       - title: 架构特点
         icon: network-wired
-        details: 基于 RocketMQ 的异步消息处理架构，QPS 达到 10w+
+        details: 提供本地锁+分布式锁和无锁化方案优化购票服务，利用多级缓存架构与延迟队列自动关单提升系统吞吐量。
       - title: 详细信息
         icon: box-archive
         details: 查看详情
