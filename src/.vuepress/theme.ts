@@ -51,6 +51,10 @@ export default hopeTheme({
                             {
                                 text: "ThreadLocal 全面解析",
                                 link: "/8gu/ThreadLocal 全面解析.md"
+                            },
+                            {
+                                text: "🪄其他",
+                                link: "/8gu/Java基础.md"
                             }
                         ]
                     },
@@ -77,6 +81,10 @@ export default hopeTheme({
                             {
                                 text: "✨介绍一下MySql的各种锁",
                                 link: "https://resource-3ac.pages.dev/介绍一下MySql的各种锁"
+                            },
+                            {
+                                text: "🪄其他",
+                                link: "/8gu/Mysql.md"
                             }
                         ]
                     },
@@ -99,6 +107,10 @@ export default hopeTheme({
                             {
                                 text: "线程池核心参数解析",
                                 link: "/8gu/线程池核心参数解析.md"
+                            },
+                            {
+                                text: "🪄其他",
+                                link: "/8gu/JUC.md"
                             }
                         ]
                     },
@@ -129,6 +141,10 @@ export default hopeTheme({
                             {
                                 text: "不同JDK版本中字符串常量池的差异",
                                 link: "/8gu/不同JDK版本中字符串常量池的演进.md"
+                            },
+                            {
+                                text: "🪄其他",
+                                link: "/8gu/JVM.md"
                             }
                         ]
                     },
@@ -169,6 +185,10 @@ export default hopeTheme({
                             {
                                 text: "循环依赖",
                                 link: "/8gu/循环依赖.md"
+                            },
+                            {
+                                text: "🪄其他",
+                                link: "/8gu/Spring.md"
                             }
                         ]
                     },
