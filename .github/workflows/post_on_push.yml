@@ -1,0 +1,23 @@
+# .github/workflows/trigger_deployment.yml
+
+name: Trigger EdgeOne Pages Deployment
+
+# 当代码推送到 main 分支时触发
+on:
+  push:
+    branches:
+      - gh-pages  # 如果您的主分支是 master，请修改这里
+
+jobs:
+  # 定义一个名为 "deploy" 的作业
+  deploy:
+    # 在最新的 Ubuntu 环境中运行
+    runs-on: ubuntu-latest
+    
+    # 作业的步骤
+    steps:
+      # 步骤的名称，会显示在 Actions 日志中
+      - name: Send POST request to webhook
+        # 运行 curl 命令来发送一个空的 POST 请求
+        # 我们将敏感的 URL 存储在 GitHub Secrets 中，以保证安全
+        run: curl -X POST ${{ secrets.PAGES_WEBHOOK_URL }}
