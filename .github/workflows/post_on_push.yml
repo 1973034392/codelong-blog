@@ -20,4 +20,4 @@ jobs:
       - name: Send POST request to webhook
         # 运行 curl 命令来发送一个空的 POST 请求
         # 我们将敏感的 URL 存储在 GitHub Secrets 中，以保证安全
-        run: curl -X POST ${{ secrets.PAGES_WEBHOOK_URL }}
+        run: curl -X POST https://pages-api.edgeone.ai/v1/webhook/68d0ffd149392af24a5787e738c13c9522656b3a9f6bc567680c435615b7488f
