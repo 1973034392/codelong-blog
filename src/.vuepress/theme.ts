@@ -68,7 +68,7 @@ export default hopeTheme({
                             },
                             {
                                 text: "✨Mysql三种日志",
-                                link: "https://resource-3ac.pages.dev/Mysql三种日志"
+                                link: "https://resource.codelong.top/Mysql三种日志"
                             },
                             {
                                 text: "BufferPool的缓存清除策略详解",
@@ -76,11 +76,11 @@ export default hopeTheme({
                             },
                             {
                                 text: "✨SQL优化",
-                                link: "https://resource-3ac.pages.dev/sql优化"
+                                link: "https://resource.codelong.top/sql优化"
                             },
                             {
                                 text: "✨介绍一下MySql的各种锁",
-                                link: "https://resource-3ac.pages.dev/介绍一下MySql的各种锁"
+                                link: "https://resource.codelong.top/介绍一下MySql的各种锁"
                             },
                             {
                                 text: "🪄其他",
@@ -128,7 +128,7 @@ export default hopeTheme({
                             },
                             {
                                 text: "✨类的生命周期",
-                                link: "https://resource-3ac.pages.dev/类的生命周期"
+                                link: "https://resource.codelong.top/类的生命周期"
                             },
                             {
                                 text: "什么是JMM",
@@ -158,7 +158,7 @@ export default hopeTheme({
                             },
                             {
                                 text: "✨Redis Stream",
-                                link: "https://resource-3ac.pages.dev/Redis Stream"
+                                link: "https://resource.codelong.top/Redis Stream"
                             },
                             {
                                 text: "Redisson 分布式锁：全面解析",
@@ -172,11 +172,11 @@ export default hopeTheme({
                         children: [
                             {
                                 text: "✨Bean的初始化流程和生命周期",
-                                link: "https://resource-3ac.pages.dev/Bean的初始化流程和生命周期"
+                                link: "https://resource.codelong.top/Bean的初始化流程和生命周期"
                             },
                             {
                                 text: "✨SpringBoot自动配置",
-                                link: "https://resource-3ac.pages.dev/SpringBoot自动配置"
+                                link: "https://resource.codelong.top/SpringBoot自动配置"
                             },
                             {
                                 text: "介绍一下IOC和AOP",
@@ -198,11 +198,11 @@ export default hopeTheme({
                         children: [
                             {
                                 text: "✨RocketMQ事务消息",
-                                link: "https://resource-3ac.pages.dev/Rocketmq事务消息"
+                                link: "https://resource.codelong.top/Rocketmq事务消息"
                             },
                             {
                                 text: "✨RocketMQ消息可靠性",
-                                link: "https://resource-3ac.pages.dev/RocketMQ消息可靠性"
+                                link: "https://resource.codelong.top/RocketMQ消息可靠性"
                             }
                         ]
                     },
@@ -212,7 +212,7 @@ export default hopeTheme({
                         children: [
                             {
                                 text: "✨ElasticSearch为什么快深度分页怎么解决",
-                                link: "https://resource-3ac.pages.dev/ElasticSearch为什么快深度分页怎么解决"
+                                link: "https://resource.codelong.top/ElasticSearch为什么快深度分页怎么解决"
                             },
                             {
                                 text: "零拷贝详解",
