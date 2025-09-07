@@ -2,7 +2,7 @@
 
 我将在这里分享我的面试经历并附加Gemini AI的相关回答,这是我的简历
 
-<PDF url=".vuepress/public/龙昊.pdf" />
+<PDF url="龙昊.pdf" />
 
 ## 欧斯特智能(上海)
 
