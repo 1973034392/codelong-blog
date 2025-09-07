@@ -62,34 +62,31 @@ sidebar: false
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Markdown 编辑器 (Typora 风格)</title>
-  <!-- 引入 Tailwind CSS 用于快速构建 UI -->
+  <title>Markdown 编辑器</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- 引入 marked.js 用于将 Markdown 转换为 HTML -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-  <!-- 引入 KaTeX 和相关扩展 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" xintegrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" xintegrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/marked-katex-extension/lib/index.umd.js"></script>
 
-  <!-- 引入 highlight.js 用于代码语法高亮 -->
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
-  <!-- 引入 jsPDF 和 html2canvas 用于导出 PDF -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-  <!-- 引入 CodeMirror 编辑器库 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/codemirror.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/theme/base16-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/codemirror.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/mode/markdown/markdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/mode/xml/xml.min.js"></script>
 
-  <!-- 引入 Mermaid.js 用于图表渲染 -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 
   <style>
@@ -108,43 +105,133 @@ sidebar: false
       --color-2: #f59102;
     }
 
-    html, body {
-      margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: var(--bg-color);
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-color: var(--bg-color);
     }
+
     #app-container {
-      display: flex; flex-direction: column; height: 100vh;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
     }
+
     #main-content {
-      flex-grow: 1; display: flex; overflow: hidden;
+      flex-grow: 1;
+      display: flex;
+      overflow: hidden;
     }
-    #preview-wrapper, .CodeMirror, #toc-container {
-      height: 100%; overflow-y: auto;
+
+    #preview-wrapper,
+    .CodeMirror,
+    #toc-container {
+      height: 100%;
+      overflow-y: auto;
     }
+
     .CodeMirror {
-      border-right: 1px solid var(--border-color); font-family: 'Menlo', 'Monaco', 'Courier New', monospace; font-size: 16px; line-height: 1.6;
+      border-right: 1px solid var(--border-color);
+      font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+      font-size: 16px;
+      line-height: 1.6;
     }
+
     /* 自定义滚动条样式 */
-    ::-webkit-scrollbar { width: 8px !important; height: 8px !important; }
-    ::-webkit-scrollbar-thumb { border-radius: 4px !important; background: var(--border-color) !important; }
-    ::-webkit-scrollbar-track { background: var(--bg-color2) !important; }
-    html, html * { scrollbar-color: var(--border-color) var(--bg-color2) !important; scrollbar-width: thin !important; }
+    ::-webkit-scrollbar {
+      width: 8px !important;
+      height: 8px !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px !important;
+      background: var(--border-color) !important;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg-color2) !important;
+    }
+
+    html,
+    html * {
+      scrollbar-color: var(--border-color) var(--bg-color2) !important;
+      scrollbar-width: thin !important;
+    }
 
     /* Typora 主题样式 */
     .markdown-body {
-      box-sizing: border-box; max-width: 980px; margin: 0 auto; padding: 32px 80px; color: var(--text-color); line-height: 1.6; letter-spacing: 0.6px; font-family: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      box-sizing: border-box;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 80px;
+      color: var(--text-color);
+      line-height: 1.6;
+      letter-spacing: 0.6px;
+      font-family: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
     }
-    .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
-      position: relative; line-height: 1.5; margin: 32px 0 18px; color: var(--title-color); letter-spacing: 2px; scroll-margin-top: 1rem;
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      position: relative;
+      line-height: 1.5;
+      margin: 32px 0 18px;
+      color: var(--title-color);
+      letter-spacing: 2px;
+      scroll-margin-top: 1rem;
     }
-    .markdown-body h1 { font-size: 32px; border-bottom: 1px solid var(--border-color); font-weight: 700; }
-    .markdown-body h2 { font-size: 28px; font-weight: 700; }
-    .markdown-body h3 { font-size: 24px; font-weight: 600; }
-    .markdown-body h4 { font-size: 20px; font-weight: 600; }
-    .markdown-body h5 { font-size: 18px; font-weight: 600; }
-    .markdown-body h6 { font-size: 16px; font-weight: 600; }
-    .markdown-body a { color: var(--color-1); }
-    .markdown-body a:hover { color: var(--color-2); }
-    .markdown-body code { background: var(--color-1-0-a); color: var(--text-code); }
+
+    .markdown-body h1 {
+      font-size: 32px;
+      border-bottom: 1px solid var(--border-color);
+      font-weight: 700;
+    }
+
+    .markdown-body h2 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .markdown-body h3 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .markdown-body h4 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .markdown-body h5 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .markdown-body h6 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .markdown-body a {
+      color: var(--color-1);
+    }
+
+    .markdown-body a:hover {
+      color: var(--color-2);
+    }
+
+    .markdown-body code {
+      background: var(--color-1-0-a);
+      color: var(--text-code);
+    }
+
     .markdown-body pre {
       background: var(--bg-color2) !important;
       border-radius: 8px;
@@ -152,38 +239,139 @@ sidebar: false
       margin-top: 16px;
       overflow-x: auto;
     }
-    .markdown-body pre code { background: transparent !important; }
-    .markdown-body blockquote { background: var(--color-1-0-b); border-left: 4px solid var(--color-1); padding: 16px; margin-top: 16px; }
-    .markdown-body table { border: 1px solid var(--border-color) !important; border-radius: 8px; border-collapse: separate; border-spacing: 0; overflow: hidden; margin-top: 16px; }
-    .markdown-body table thead tr th { background: var(--bg-color2); }
-    .markdown-body table tbody tr:nth-child(even) td { background: var(--bg-color2); }
-    .markdown-body table tr th, .markdown-body table tr td { padding: 12px 15px !important; line-height: 1.5; }
-    .markdown-body ul.task-list-item { list-style-type: none; padding-left: 0; }
-    .markdown-body .task-list-item input[type="checkbox"] { margin-right: 8px; }
-    .markdown-body .mermaid { text-align: center; margin-top: 16px; }
+
+    .markdown-body pre code {
+      background: transparent !important;
+    }
+
+    .markdown-body blockquote {
+      background: var(--color-1-0-b);
+      border-left: 4px solid var(--color-1);
+      padding: 16px;
+      margin-top: 16px;
+    }
+
+    .markdown-body table {
+      border: 1px solid var(--border-color) !important;
+      border-radius: 8px;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      margin-top: 16px;
+    }
+
+    .markdown-body table thead tr th {
+      background: var(--bg-color2);
+    }
+
+    .markdown-body table tbody tr:nth-child(even) td {
+      background: var(--bg-color2);
+    }
+
+    .markdown-body table tr th,
+    .markdown-body table tr td {
+      padding: 12px 15px !important;
+      line-height: 1.5;
+    }
+
+    .markdown-body ul.task-list-item {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .markdown-body .task-list-item input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .markdown-body .mermaid {
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    /* Typora 主题样式 */
+    .markdown-body {
+      box-sizing: border-box; max-width: 980px; margin: 0 auto; padding: 32px 80px; color: var(--text-color); line-height: 1.6; letter-spacing: 0.6px; font-family: "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    /* --- START: 在这里添加下面的代码 --- */
+    .markdown-body ul {
+      list-style-type: disc;
+      padding-left: 2rem; /* 恢复默认的左侧内边距 */
+    }
+    .markdown-body ol {
+      list-style-type: decimal;
+      padding-left: 2rem;
+    }
+    /* --- END: 添加结束 --- */
+
+    .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+      position: relative; line-height: 1.5; margin: 32px 0 18px; color: var(--title-color); letter-spacing: 2px; scroll-margin-top: 1rem;
+    }
 
     /* 目录样式 */
-    #toc-container { background-color: #ffffff; padding: 1.5rem; transition: transform 0.3s ease-in-out; position: relative; }
-    #toc-container ul { list-style-type: none; padding-left: 0; }
-    #toc-container a { color: #4b5563; text-decoration: none; display: block; padding: 4px 0; transition: all 0.2s; border-left: 2px solid transparent; padding-left: 10px; }
-    #toc-container a:hover { color: #111827; }
-    #toc-container a.toc-active { color: var(--color-1); font-weight: 700; border-left-color: var(--color-1); }
-    #toc-container .toc-h1 { font-weight: bold; }
-    #toc-container .toc-h2 { padding-left: 1rem; }
-    #toc-container .toc-h3 { padding-left: 2rem; }
-    #toc-container .toc-h4 { padding-left: 3rem; }
+    #toc-container {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+    }
+
+    #toc-container ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    #toc-container a {
+      color: #4b5563;
+      text-decoration: none;
+      display: block;
+      padding: 4px 0;
+      transition: all 0.2s;
+      border-left: 2px solid transparent;
+      padding-left: 10px;
+    }
+
+    #toc-container a:hover {
+      color: #111827;
+    }
+
+    #toc-container a.toc-active {
+      color: var(--color-1);
+      font-weight: 700;
+      border-left-color: var(--color-1);
+    }
+
+    #toc-container .toc-h1 {
+      font-weight: bold;
+    }
+
+    #toc-container .toc-h2 {
+      padding-left: 1rem;
+    }
+
+    #toc-container .toc-h3 {
+      padding-left: 2rem;
+    }
+
+    #toc-container .toc-h4 {
+      padding-left: 3rem;
+    }
 
     /* Resizer Handle */
     #resizer {
       position: absolute;
       top: 0;
-      right: -5px; /* 将拖动条中心对准边缘 */
-      width: 10px; /* 增加可点击区域的宽度 */
+      right: -5px;
+      /* 将拖动条中心对准边缘 */
+      width: 10px;
+      /* 增加可点击区域的宽度 */
       height: 100%;
       cursor: col-resize;
-      background-color: transparent; /* 保持拖动条本身不可见 */
+      background-color: transparent;
+      /* 保持拖动条本身不可见 */
       z-index: 20;
     }
+
     /* 鼠标悬停时显示一条细线作为视觉提示 */
     #resizer::after {
       content: '';
@@ -196,72 +384,130 @@ sidebar: false
       background-color: transparent;
       transition: background-color 0.2s ease;
     }
+
     #resizer:hover::after {
       background-color: var(--color-1);
     }
 
 
     /* CodeMirror 主题覆盖 */
-    .cm-s-base16-light.CodeMirror { background: #fdfdfd; color: #202020; }
-    .cm-s-base16-light .cm-header {color: #a0a0a0;}
-    .cm-s-base16-light .cm-strong {font-weight: bold;}
+    .cm-s-base16-light.CodeMirror {
+      background: #fdfdfd;
+      color: #202020;
+    }
+
+    .cm-s-base16-light .cm-header {
+      color: #a0a0a0;
+    }
+
+    .cm-s-base16-light .cm-strong {
+      font-weight: bold;
+    }
 
     /* 桌面端模式切换 */
     @media (min-width: 769px) {
-      .is-side-by-side #toc-container { display: none; }
-      .is-preview-only #editor-wrapper { display: none; }
+      .is-side-by-side #toc-container {
+        display: none;
+      }
+
+      .is-preview-only #editor-wrapper {
+        display: none;
+      }
     }
 
     /* 移动端响应式布局 */
     @media (max-width: 768px) {
-      #main-content { flex-direction: column; }
-      #preview-wrapper, #editor-wrapper { width: 100% !important; height: 50%; }
-      .CodeMirror { border-top: 1px solid var(--border-color); border-right: none; }
-      #toc-container {
-        position: absolute; top: 0; left: 0; height: 100%; width: 280px; transform: translateX(-100%); z-index: 40; border-right: 1px solid #e5e7eb;
+      #main-content {
+        flex-direction: column;
       }
-      #toc-container.is-open { transform: translateX(0); }
-      .is-preview-only #editor-wrapper { display: none; }
-      .is-preview-only #preview-wrapper { height: 100%; }
-      .markdown-body { padding: 16px; }
-      header { flex-direction: column; align-items: stretch; gap: 0.5rem; }
-      #resizer { display: none; }
+
+      #preview-wrapper,
+      #editor-wrapper {
+        width: 100% !important;
+        height: 50%;
+      }
+
+      .CodeMirror {
+        border-top: 1px solid var(--border-color);
+        border-right: none;
+      }
+
+      #toc-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 280px;
+        transform: translateX(-100%);
+        z-index: 40;
+        border-right: 1px solid #e5e7eb;
+      }
+
+      #toc-container.is-open {
+        transform: translateX(0);
+      }
+
+      .is-preview-only #editor-wrapper {
+        display: none;
+      }
+
+      .is-preview-only #preview-wrapper {
+        height: 100%;
+      }
+
+      .markdown-body {
+        padding: 16px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+      }
+
+      #resizer {
+        display: none;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <div id="app-container">
-  <!-- 顶部工具栏 -->
   <header class="flex-shrink-0 bg-white text-gray-800 p-2 flex items-center justify-between shadow-md z-10">
     <div class="flex items-center space-x-4">
       <button id="toc-toggle-btn" class="p-2 rounded-md md:hidden hover:bg-gray-200">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
       </button>
       <h1 class="text-lg font-semibold text-gray-900">Markdown Pro</h1>
     </div>
     <div class="flex items-center space-x-2 md:space-x-4 flex-wrap justify-end">
-      <button id="upload-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">上传</button>
+      <button id="upload-btn"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">上传</button>
       <input type="file" id="file-input" accept=".md,.markdown" class="hidden">
-      <button id="export-pdf-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">导出PDF</button>
-      <button id="mode-toggle-btn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">仅预览</button>
-      <button id="fullscreen-btn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">全屏</button>
+      <button id="export-pdf-btn"
+              class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">导出PDF</button>
+      <button id="mode-toggle-btn"
+              class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">仅预览</button>
+      <button id="fullscreen-btn"
+              class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-3 md:px-4 rounded transition duration-300 text-sm">全屏</button>
     </div>
   </header>
 
-  <!-- 主内容区 -->
   <main id="main-content" class="main-content relative is-side-by-side">
-    <!-- 目录 (移至左侧) -->
     <div id="toc-container" class="w-[24rem] flex-shrink-0">
       <h2 class="text-gray-900 font-bold text-xl mb-4">目录</h2>
       <div id="toc"></div>
       <div id="resizer"></div>
     </div>
-    <!-- 预览区 -->
     <div id="preview-wrapper" class="flex-1 bg-gray-50">
       <div id="preview" class="markdown-body"></div>
     </div>
-    <!-- 编辑器 -->
     <div id="editor-wrapper" class="flex-1">
       <textarea id="editor"></textarea>
     </div>
@@ -270,8 +516,13 @@ sidebar: false
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
-    const { jsPDF } = window.jspdf;
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'neutral'
+    });
+    const {
+      jsPDF
+    } = window.jspdf;
 
     // DOM 元素获取
     const mainContent = document.getElementById('main-content');
@@ -292,7 +543,10 @@ sidebar: false
 
     // 初始化 CodeMirror 编辑器
     const editor = CodeMirror.fromTextArea(editorTextarea, {
-      mode: 'markdown', theme: 'base16-light', lineNumbers: true, lineWrapping: true,
+      mode: 'markdown',
+      theme: 'base16-light',
+      lineNumbers: true,
+      lineWrapping: true,
     });
     editor.setSize('100%', '100%');
     const editorScroller = editor.getScrollerElement();
@@ -303,7 +557,9 @@ sidebar: false
 
     // 设置 marked.js 并集成 KaTeX
     marked.use(
-            window.markedKatex({ throwOnError: false })
+            window.markedKatex({
+              throwOnError: false
+            })
     );
 
     marked.setOptions({
@@ -313,7 +569,10 @@ sidebar: false
         }
         try {
           const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-          return hljs.highlight(code, { language, ignoreIllegals: true }).value;
+          return hljs.highlight(code, {
+            language,
+            ignoreIllegals: true
+          }).value;
         } catch (e) {
           return code; // return original code on error
         }
@@ -339,9 +598,13 @@ sidebar: false
         try {
           const mermaidNodes = preview.querySelectorAll('.mermaid');
           if (mermaidNodes.length > 0) {
-            mermaid.run({ nodes: mermaidNodes }).catch(e => console.error("Mermaid rendering error:", e));
+            mermaid.run({
+              nodes: mermaidNodes
+            }).catch(e => console.error("Mermaid rendering error:", e));
           }
-        } catch(e) { console.error("Mermaid rendering error:", e); }
+        } catch (e) {
+          console.error("Mermaid rendering error:", e);
+        }
       }, 100);
     };
 
@@ -356,7 +619,8 @@ sidebar: false
       headings.forEach((heading, index) => {
         const level = parseInt(heading.tagName.substring(1), 10);
         const text = heading.textContent;
-        const id = 'heading-' + text.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-') + '-' + index;
+        const id = 'heading-' + text.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g,
+                '-') + '-' + index;
         heading.id = id;
         const link = document.createElement('a');
         link.href = '#' + id;
@@ -366,10 +630,15 @@ sidebar: false
         link.onclick = (e) => {
           e.preventDefault();
           isClickScrolling = true;
-          document.querySelectorAll('#toc a').forEach(a => a.classList.remove('toc-active'));
+          document.querySelectorAll('#toc a').forEach(a => a.classList.remove(
+                  'toc-active'));
           link.classList.add('toc-active');
-          heading.scrollIntoView({ behavior: 'smooth' });
-          setTimeout(() => { isClickScrolling = false; }, 1000);
+          heading.scrollIntoView({
+            behavior: 'smooth'
+          });
+          setTimeout(() => {
+            isClickScrolling = false;
+          }, 1000);
           if (window.innerWidth <= 768) {
             tocContainer.classList.remove('is-open');
           }
@@ -383,14 +652,20 @@ sidebar: false
 
     const setupIntersectionObserver = () => {
       if (intersectionObserver) intersectionObserver.disconnect();
-      const options = { root: previewWrapper, rootMargin: "0px 0px -80% 0px", threshold: 0 };
+      const options = {
+        root: previewWrapper,
+        rootMargin: "0px 0px -80% 0px",
+        threshold: 0
+      };
       intersectionObserver = new IntersectionObserver((entries) => {
         if (isClickScrolling) return;
-        document.querySelectorAll('#toc a').forEach(a => a.classList.remove('toc-active'));
+        document.querySelectorAll('#toc a').forEach(a => a.classList.remove(
+                'toc-active'));
         const intersectingEntries = entries.filter(e => e.isIntersecting);
         if (intersectingEntries.length > 0) {
           const targetId = intersectingEntries[0].target.id;
-          const activeLink = document.querySelector(`#toc a[data-target-id="${targetId}"]`);
+          const activeLink = document.querySelector(
+                  `#toc a[data-target-id="${targetId}"]`);
           if (activeLink) activeLink.classList.add('toc-active');
         }
       }, options);
@@ -404,7 +679,9 @@ sidebar: false
       isSyncing = true;
       const percent = source.scrollTop / (source.scrollHeight - source.clientHeight);
       target.scrollTop = (target.scrollHeight - target.clientHeight) * percent;
-      setTimeout(() => { isSyncing = false; }, 50);
+      setTimeout(() => {
+        isSyncing = false;
+      }, 50);
     };
 
     editorScroller.addEventListener('scroll', () => syncScroll(editorScroller, previewWrapper));
@@ -449,7 +726,8 @@ sidebar: false
     });
 
     fullscreenBtn.addEventListener('click', () => {
-      if (!document.fullscreenElement) appContainer.requestFullscreen().catch(err => alert(`全屏失败: ${err.message}`));
+      if (!document.fullscreenElement) appContainer.requestFullscreen().catch(err => alert(
+              `全屏失败: ${err.message}`));
       else document.exitFullscreen();
     });
     document.addEventListener('fullscreenchange', () => {
@@ -497,13 +775,23 @@ sidebar: false
       document.body.appendChild(printContainer);
 
       try {
-        const canvas = await html2canvas(printContainer, { scale: 1, useCORS: true, windowWidth: printContainer.scrollWidth, windowHeight: printContainer.scrollHeight });
+        const canvas = await html2canvas(printContainer, {
+          scale: 1,
+          useCORS: true,
+          windowWidth: printContainer.scrollWidth,
+          windowHeight: printContainer.scrollHeight
+        });
         const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF({ orientation: 'p', unit: 'pt', format: 'a4' });
+        const pdf = new jsPDF({
+          orientation: 'p',
+          unit: 'pt',
+          format: 'a4'
+        });
         const imgProps = pdf.getImageProperties(imgData);
         const pdfWidth = pdf.internal.pageSize.getWidth();
         const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-        let heightLeft = pdfHeight, position = 0;
+        let heightLeft = pdfHeight,
+                position = 0;
         pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, pdfHeight);
         heightLeft -= pdf.internal.pageSize.getHeight();
         while (heightLeft > 0) {
@@ -527,9 +815,16 @@ sidebar: false
 
 这是一个功能强大的 Markdown 编辑器和阅读器。
 
+## 主要功能点
+
+* **实时预览**: 在左侧编写 Markdown，在右侧即时查看渲染效果。
+* **语法高亮**: 支持多种编程语言的代码块语法高亮。
+* **数学公式**: 使用 KaTeX 精美地渲染 LaTeX 数学公式。
+* **图表绘制**: 通过 Mermaid.js 轻松创建流程图、序列图等。
+
 ## LaTeX 数学公式
 
-**现在支持 KaTeX 渲染的数学公式！**
+现在支持 KaTeX 渲染的数学公式！
 
 行内公式: $E=mc^2$
 
@@ -560,6 +855,7 @@ function greet() {
 </script>
 
 </body>
+
 </html>
 
 ```
