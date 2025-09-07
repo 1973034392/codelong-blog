@@ -2,11 +2,14 @@ import {navbar} from "vuepress-theme-hope";
 
 export default navbar([
     "/",
-    "/technologyStack/index",
     {
         text: "八股",
         icon: "calendar",
         link: "/8gu/README.md",
+    },
+    {
+        text: "🐉🐉一百面",
+        link: "/interviews/index.md",
     },
     {
         text: "百万级网关系统",

@@ -12,7 +12,7 @@ export default hopeTheme({
 
     logo: "/favicon.ico",
 
-    repo: "vuepress-theme-hope/vuepress-theme-hope",
+    repo: "1973034392/api-gateway-codelong",
 
     docsDir: "src",
 
