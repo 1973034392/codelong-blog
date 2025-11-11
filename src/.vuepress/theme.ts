@@ -324,6 +324,13 @@ export default hopeTheme({
                         ],
                     },
                     {
+                        text: "三、压测结果",
+                        collapsible: false,
+                        expanded: true,
+                        link: "/projects/gateway/压测结果.md",
+                        children: []
+                    },
+                    {
                         text: "三、项目文档",
                         collapsible: false,
                         children: [
