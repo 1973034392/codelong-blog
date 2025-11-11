@@ -331,7 +331,7 @@ export default hopeTheme({
                         children: []
                     },
                     {
-                        text: "三、项目文档",
+                        text: "四、项目文档",
                         collapsible: false,
                         children: [
                             {
