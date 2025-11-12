@@ -423,6 +423,13 @@ export default hopeTheme({
                                         link: "/projects/gateway/项目文档/网关中心/8. Redis过期事件监听.md",
                                         children: []
                                     },
+                                    {
+                                        text: "(9). 分布式限流配置管理",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/网关中心/9. 分布式限流配置管理.md",
+                                        children: []
+                                    },
                                 ]
                             },
                             {
@@ -491,6 +498,13 @@ export default hopeTheme({
                                         collapsible: false,
                                         expanded: true,
                                         link: "/projects/gateway/项目文档/核心服务/8. 基于SPI机制实现多执行器扩展.md",
+                                        children: []
+                                    },
+                                    {
+                                        text: "(9). 分布式限流器",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/项目文档/核心服务/9. 分布式限流器.md",
                                         children: []
                                     },
                                 ]
