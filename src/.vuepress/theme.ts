@@ -427,8 +427,29 @@ export default hopeTheme({
                                         text: "(9). 分布式限流配置管理",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/网关中心/9. 分布式限流配置管理.md",
-                                        children: []
+                                        children: [
+                                            {
+                                                text: "(9.1). 设计与实现",
+                                                collapsible: false,
+                                                expanded: true,
+                                                link: "/projects/gateway/项目文档/网关中心/9.1 分布式限流配置管理-设计与实现",
+                                                children: []
+                                            },
+                                            {
+                                                text: "(9.2). API与推送机制",
+                                                collapsible: false,
+                                                expanded: true,
+                                                link: "/projects/gateway/项目文档/网关中心/9.2 分布式限流配置管理-API与推送机制",
+                                                children: []
+                                            },
+                                            {
+                                                text: "(9.3). 使用场景与最佳实践",
+                                                collapsible: false,
+                                                expanded: true,
+                                                link: "/projects/gateway/项目文档/网关中心/9.3 分布式限流配置管理-使用场景与最佳实践",
+                                                children: []
+                                            },
+                                        ]
                                     },
                                 ]
                             },
@@ -501,11 +522,39 @@ export default hopeTheme({
                                         children: []
                                     },
                                     {
-                                        text: "(9). 分布式限流器",
+                                        text: "(9). 异步化处理机制",
                                         collapsible: false,
                                         expanded: true,
-                                        link: "/projects/gateway/项目文档/核心服务/9. 分布式限流器.md",
+                                        link: "/projects/gateway/项目文档/核心服务/9. 异步化处理机制",
                                         children: []
+                                    },
+                                    {
+                                        text: "(10). 分布式限流器",
+                                        collapsible: false,
+                                        expanded: true,
+                                        children: [
+                                            {
+                                                text: "(10.1). 设计理念与架构",
+                                                collapsible: false,
+                                                expanded: true,
+                                                link: "/projects/gateway/项目文档/核心服务/10.1 分布式限流器-设计理念与架构",
+                                                children: []
+                                            },
+                                            {
+                                                text: "(10.2). 算法实现与代码",
+                                                collapsible: false,
+                                                expanded: true,
+                                                link: "/projects/gateway/项目文档/核心服务/10.2 分布式限流器-算法实现与代码",
+                                                children: []
+                                            },
+                                            {
+                                                text: "(10.3). 流程图与架构图",
+                                                collapsible: false,
+                                                expanded: true,
+                                                link: "/projects/gateway/项目文档/核心服务/10.3 分布式限流器-流程图与架构图",
+                                                children: []
+                                            },
+                                        ]
                                     },
                                 ]
                             },
