@@ -586,6 +586,20 @@ export default hopeTheme({
                                     },
                                 ]
                             },
+                            {
+                                text: "5. 下一步计划",
+                                collapsible: false,
+                                expanded: true,
+                                children: [
+                                    {
+                                        text: "(1). NGINX高可用与中心无状态化方案设计",
+                                        collapsible: false,
+                                        expanded: true,
+                                        link: "/projects/gateway/系统架构设计/API 网关高可用 (HA) 与中心无状态化方案设计.md",
+                                        children: []
+                                    },
+                                ]
+                            },
                         ],
                     },
                 ],
