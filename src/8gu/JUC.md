@@ -53,7 +53,7 @@ JMM(Java Memory Model)Java内存模型,是java虚拟机规范中所定义的一�
 
 Java内存模型(Java Memory Model)描述了Java程序中各种变量(线程共享变量)的访问规则，以及在JVM中将变量存储到内存和从内存中读取变量这样的底层细节。
 
-![image-20230504181638237](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/image-20230504181638237.png)
+![image-20230504181638237](https://pic.codelong.top/PicGo/image-20230504181638237.png)
 
 特点：
 
@@ -92,9 +92,9 @@ monitor在jvm中的基本实现：
 
 总之，每一个锁的对象，它就一定会有一个对应的这么一个monitor，每一个被锁住的对象都会和一个monitor关联起来，在对象头里有一个markword,会存放指向monitor的指针。
 
-![be1f1642c1d44eeeb825b31322ada5e9](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/be1f1642c1d44eeeb825b31322ada5e9.png)
+![be1f1642c1d44eeeb825b31322ada5e9](https://pic.codelong.top/PicGo/be1f1642c1d44eeeb825b31322ada5e9.png)
 
-![e8668989187d4711bfb2e6ac1c671d5e](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/e8668989187d4711bfb2e6ac1c671d5e.png)
+![e8668989187d4711bfb2e6ac1c671d5e](https://pic.codelong.top/PicGo/e8668989187d4711bfb2e6ac1c671d5e.png)
 
 
 ## Syncronized锁升级的过程讲一下

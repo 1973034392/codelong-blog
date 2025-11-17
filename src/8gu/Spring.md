@@ -39,11 +39,11 @@
 
 ## 事务失效的场景
 
-![cd5de7a66d2a919e9210b222a7dce169](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/cd5de7a66d2a919e9210b222a7dce169.png)
+![cd5de7a66d2a919e9210b222a7dce169](https://pic.codelong.top/PicGo/cd5de7a66d2a919e9210b222a7dce169.png)
 
 ## Bean的初始化过程
 
-![1699966914771-319aeb73-ee91-46f8-b32a-cba0e57bcc74.png](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/1699966914771-319aeb73-ee91-46f8-b32a-cba0e57bcc74-169298.png)
+![1699966914771-319aeb73-ee91-46f8-b32a-cba0e57bcc74.png](https://pic.codelong.top/PicGo/1699966914771-319aeb73-ee91-46f8-b32a-cba0e57bcc74-169298.png)
 
 ## Autowired和Resource的不同？
 

@@ -14,7 +14,7 @@ title: 微服务的拆分
 
 拆分以后的项目说明:
 
-![PixPin_2025-02-26_18-51-31](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-26_18-51-31.png)
+![PixPin_2025-02-26_18-51-31](https://pic.codelong.top/PicGo/PixPin_2025-02-26_18-51-31.png)
 
 我将项目拆分为了几个模块:
 
@@ -22,7 +22,7 @@ title: 微服务的拆分
 
 * contest-service - 负责比赛相关接口
 
-  ![PixPin_2025-02-26_19-55-01](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-26_19-55-01.png)
+  ![PixPin_2025-02-26_19-55-01](https://pic.codelong.top/PicGo/PixPin_2025-02-26_19-55-01.png)
 
 * feign-service - 负责远程feign调用,为了降低开发难度,我选择提高一些耦合度来进行更简便的开发
 
@@ -30,15 +30,15 @@ title: 微服务的拆分
 
 * judge-service - 判题模块,负责判题和返回判题相关接口,以后会对这部分模块进行优化
 
-  ![PixPin_2025-02-26_19-55-35](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-26_19-55-35.png)
+  ![PixPin_2025-02-26_19-55-35](https://pic.codelong.top/PicGo/PixPin_2025-02-26_19-55-35.png)
 
 * problem-service - 问题模块,负责问题的查询等等功能
 
-  ![PixPin_2025-02-26_19-55-56](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-26_19-55-56.png)
+  ![PixPin_2025-02-26_19-55-56](https://pic.codelong.top/PicGo/PixPin_2025-02-26_19-55-56.png)
 
 * user-service - 用户模块,负责用户相关接口的实现
 
-![PixPin_2025-02-26_19-56-07](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-26_19-56-07.png)
+![PixPin_2025-02-26_19-56-07](https://pic.codelong.top/PicGo/PixPin_2025-02-26_19-56-07.png)
 
 **特别说明:本次拆分只是暂时的,未来将对这些模块做进一步优化和处理**
 
@@ -193,7 +193,7 @@ spring:
 
 然后启动该服务:
 
-![PixPin_2025-02-26_19-05-02](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-26_19-05-02.png)
+![PixPin_2025-02-26_19-05-02](https://pic.codelong.top/PicGo/PixPin_2025-02-26_19-05-02.png)
 
 ## 特别说明
 
@@ -616,9 +616,9 @@ public class ContestSubListener {
 
 在nacos添加如下配置:
 
-![PixPin_2025-02-28_17-28-47](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-28_17-28-47.png)
+![PixPin_2025-02-28_17-28-47](https://pic.codelong.top/PicGo/PixPin_2025-02-28_17-28-47.png)
 
-![PixPin_2025-02-28_17-29-30](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-02-28_17-29-30.png)
+![PixPin_2025-02-28_17-29-30](https://pic.codelong.top/PicGo/PixPin_2025-02-28_17-29-30.png)
 
 然后再引入依赖
 
@@ -974,7 +974,7 @@ public class test {
 
 最终效果如图所示:
 
-![PixPin_2025-03-22_14-29-21](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-03-22_14-29-21.png)
+![PixPin_2025-03-22_14-29-21](https://pic.codelong.top/PicGo/PixPin_2025-03-22_14-29-21.png)
 
 ## 无效token判断
 

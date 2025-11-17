@@ -46,15 +46,15 @@ sidebar: false
 
 开始打算投大厂实习了,🐉🐉一百面也是从这里开始的,包括两个小厂的一二面,美团的一二面,字节的一面,腾讯的一二面
 
-![美团](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-09-07_21-07-49.png)
+![美团](https://pic.codelong.top/PicGo/0becbe41b02b6e00d85348278dc4f4b4.png)
 
-![腾讯](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/PixPin_2025-09-07_21-06-10.png)
+![腾讯](https://pic.codelong.top/PicGo/PixPin_2025-09-07_21-06-10.png)
 
-![c964289448f26124547edc342373e32a](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/c964289448f26124547edc342373e32a.png)
+![c964289448f26124547edc342373e32a](https://pic.codelong.top/PicGo/c964289448f26124547edc342373e32a.png)
 
 最后在九月中旬决定去美团实习,开始我的第一份大厂实习~
 
-![cc599251d0e8f547fee072655091c569](https://pub-8f51c562924b4b9f89b40704dbb3bc16.r2.dev/PicGo/cc599251d0e8f547fee072655091c569.jpg)
+![cc599251d0e8f547fee072655091c569](https://pic.codelong.top/PicGo/cc599251d0e8f547fee072655091c569.jpg)
 
 ## 三、技术栈
 
